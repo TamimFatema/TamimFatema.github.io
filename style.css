@@ -249,6 +249,7 @@ p {
 /* About Section */
 #about .about {
 	display: flex;
+	flex-direction: column;
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -316,6 +317,7 @@ p {
 }
 #about .hobbies{
 	display: flex;
+	justify-content: center;
     color: pink(100, 255, 218);
     font-size: 15px;
     font-weight: bolder;
@@ -633,6 +635,10 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
+	#about .hobbies{
+		flex-direction: row;
+		justify-content: flex-start;
+	}
 	
 	/* End About */
 
@@ -717,6 +723,11 @@ p {
 		display: none;
 	}
 	/* End header */
+
+	#about .hobbies{
+		flex-direction: row;
+		justify-content: flex-start;
+	}
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
